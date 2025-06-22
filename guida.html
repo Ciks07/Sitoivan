@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guida al resell</title>
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Cormorant&display=swap" rel="stylesheet">
+<style>
+  p{
+    text-align: justify; 
+    font-family: 'Cormorant', serif;
+     font-size: 15px; 
+     color: #ffffff;
+    line-height: 1.4;
+    display: inline-block;
+  }
+  h1{
+    text-align: center; 
+    font-family: 'Unica One', sans-serif; 
+    color: #ffffff;
+    font-size: 44px; 
+    margin-bottom: 10px; 
+
+    display: inline-block;
+  }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .link-footer {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none; 
+      color: black;
+      font-size: 16px;
+    }
+    .link-footer img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    .hamburger {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1100;
+  color: #ffffff;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1c1c1c;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #383737;
+  border-left: 4px solid #ffffff;
+  color: #fff;
+}
+
+.sidebar.open {
+  left: 0;
+}
+.divider {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 2rem auto;
+      width: 60%;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: white;
+      margin: 0.5rem auto 0;
+      opacity: 0.3;
+    }
+  </style>
+    </head>
+    <body style="background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('Sfondoguida.jpg');
+  background-size: cover;
+  background-position: center;;
+      background-size: cover;
+      background-position: center;
+      background-repeat: norepeat;
+      height: 100vh;
+      margin: 0;
+      background-attachment: scroll;">
+    <main>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="sidebar" id="sidebar">
+  <a style="font-family: 'Unica One', sans-serif; " href="biografia.html">Biografia</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="vetrina.html">La mia vetrina</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="disponibili.html">Sneakers disponibili</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="guida.html">Guida al resell</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="collezione.html">Mostrami la tua collezione!</a>
+</div>
+<div style="max-width: 900px;
+        margin: 0 auto; 
+        position: relative; 
+        z-index: 2;
+        padding: 2rem; 
+        color: white;">
+    <center>
+        <h1>
+            Da zero a sneakerhead: la guida che fa la differenza
+        </h1>
+    </center>
+    <p>
+        Se vuoi entrare nel mondo del resell ma non sai da dove cominciare, sei nel posto giusto. Ho costruito una guida completa pensata per chi parte da zero, che ti accompagnerà passo dopo passo nell’affascinante ma complesso mercato della rivendita di sneaker e streetwear. All’interno troverai consigli pratici e strategie collaudate per riconoscere i modelli più richiesti, capire quali sono i momenti migliori per acquistare e rivendere e sfruttare al massimo le piattaforme più efficaci per vendere i tuoi prodotti. Imparerai come valutare il potenziale di profitto di una scarpa, quali strumenti digitali usare per monitorare il mercato e come evitare gli errori più comuni che possono far perdere tempo e denaro.
+        La guida non è solo teoria: è il risultato di anni di esperienza personale e di un’attenta analisi del mercato, pensata per darti un vantaggio concreto fin dal primo giorno. È a pagamento perché racchiude contenuti esclusivi e approfonditi, ma soprattutto perché voglio offrire un valore reale e un supporto concreto a chi decide di investire nel proprio percorso.
+        Chi acquista la guida avrà infatti accesso a un supporto dedicato per un periodo di tempo, durante il quale potrà contattarmi direttamente per ricevere consigli personalizzati, risolvere dubbi o affrontare situazioni specifiche legate al resell. In questo modo, non sarai mai lasciato solo davanti alle difficoltà e potrai affrontare ogni fase con maggiore sicurezza.
+        Investire in questa guida significa dotarsi degli strumenti giusti, imparare a muoversi con consapevolezza e costruire le basi per una possibile attività redditizia. Se sei davvero determinato a entrare nel mondo del resell, questa guida ti darà la marcia in più per partire con il piede giusto e crescere nel tempo.
+    </p>
+</div>
+    </main>
+    <footer style="background-color: #1c1c1c; text-align: center; padding: 15px;">
+    <a href="https://www.instagram.com/_ivanpiccione_/" 
+    style="display: inline-flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    font-family: 'Unica One', sans-serif;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;">
+      SEGUIMI SU INSTAGRAM!
+    </a>
+  </footer>
+  <script>
+  function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("open");
+  };
+</script>
+    </body>
+</html>

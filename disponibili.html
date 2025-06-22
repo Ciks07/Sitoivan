@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sneakers disponibili</title>
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Cormorant&display=swap" rel="stylesheet">
+<style>
+  p{
+    text-align: justify; 
+    font-family: 'Cormorant', serif;
+     font-size: 15px; 
+     color: #000000;
+    line-height: 1.4;
+    display: inline-block;
+  }
+  h1{
+    text-align: center; 
+    font-family: 'Unica One', sans-serif; 
+    color: #000000;
+    font-size: 28px; 
+    margin-bottom: 10px; 
+    line-height: 1.4;
+    display: inline-block;
+  }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .link-footer {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none; 
+      color: black;
+      font-size: 16px;
+    }
+    .link-footer img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    .hamburger {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1100;
+  color: #ffffff;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1c1c1c;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #383737;
+  border-left: 4px solid #ffffff;
+  color: #fff;
+}
+
+.sidebar.open {
+  left: 0;
+}
+.divider {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 2rem auto;
+      width: 60%;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: white;
+      margin: 0.5rem auto 0;
+      opacity: 0.3;
+    }
+  </style>
+    </head>
+    <body style="background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('Sfondodisponibili.jpg');
+  background-size: cover;
+  background-position: center;;
+      background-size: cover;
+      background-position: center;
+      background-repeat: norepeat;
+      height: 100vh;
+      margin: 0;
+      background-attachment: scroll;">
+    <main>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+<div class="sidebar" id="sidebar">
+  <a style="font-family: 'Unica One', sans-serif; " href="biografia.html">Biografia</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="vetrina.html">La mia vetrina</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="disponibili.html">Sneakers disponibili</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="guida.html">Guida al resell</a>
+  <a style="font-family: 'Unica One', sans-serif; " href="collezione.html">Mostrami la tua collezione!</a>
+</div>
+<div style="max-width: 900px;
+        margin: 0 auto; 
+        position: relative; 
+        z-index: 2;
+        padding: 2rem; 
+        color: white;">
+<center>
+    <h1 style="text-align: justify;">
+        Al momento non ho scarpe già pronte da offrire, ma la vera esperienza nasce nel trovare insieme il paio perfetto per te. Raccontami cosa cerchi, e mi impegnerò a scovare quel modello unico che non vede l’ora di diventare il tuo prossimo must-have.
+    </h1>
+</center>
+</div>
+
+
+    </main>
+    <footer style="background-color: #1c1c1c; text-align: center; padding: 15px;">
+    <a href="https://www.instagram.com/_ivanpiccione_/" 
+    style="display: inline-flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    font-family: 'Unica One', sans-serif;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;">
+      SEGUIMI SU INSTAGRAM!
+    </a>
+  </footer>
+  <script>
+  function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("open");
+  };
+</script>
+    </body>
+</html>
